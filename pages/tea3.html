@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="..\assets/css/index.css">
+<link rel="stylesheet" type="text/css" href="..\assets/css/bootstrap.css">
+ 
+ 
+
+
+
+</head>
+<body>
+	<div class="head">
+		<div class="logo"><a href="..\index.html"><img src="..\assets/images/logo.png" border="0" style=" position:relative;top:20px;left:30px; height:160px ;"></a> </div>
+		<div class="inter"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post" style="height: 400px;width:600px; ">
+    <div class="imgcontainer" >
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container" >
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"> <a href="acount.html">註冊</a></span>
+    </div>
+  </form>
+</div></div>
+		<div class="car"><a href="shopcar.html"  style="text-decoration:none;" title="car"><img src="..\assets/images/car.gif" border="0" style=" border-radius: 10%;width:100px;height:100px; "></a></div>
+		</div>
+	</div>
+	<div class="MENU">
+<ul>
+  <li><a href="produce.html"  style="text-decoration:none;" title="soda">碳酸飲料</a></li>
+  <li><a href="tea.html"  style="text-decoration:none;" title="tea">茶類</a></li>
+  <li><a href="juice.html"  style="text-decoration:none;" title="juice">果汁</a></li>
+  <li><a href="coffee.html"  style="text-decoration:none;" title="coffee">咖啡飲料</a></li>
+  <li><a href="bear.html"  style="text-decoration:none;" title="bear">酒飲</a></li>  
+</ul>
+</div>
+     <div class="main">
+     	<div class="pic"><img src="..\assets/images/tea.jpg" border="0" style=" border-radius: 10%;width:350px;height:350px; "></div>
+     				<h1 class="w1"><b>玉山冰茶</b></h1>
+     				<h1 class="c1"><b>$60</b></h1>
+            <div class="pga">
+     				<div class="pgb">
+
+        <div class="pgc">玉山冰茶</div>
+        <div class="pgd">選用台灣玉山結冰水，透心涼心飛揚。好涼好涼，喝完明年來做娘!!!</div>
+        <div class="rating">
+                          <input type="radio" id="star5" name="rating" value="5" hidden/>
+                          <label for="star5"></label>
+                          <input type="radio" id="star4" name="rating" value="4" hidden/>
+                          <label for="star4"></label>
+                          <input type="radio" id="star3" name="rating" value="3" hidden/>
+                          <label for="star3"></label>
+                          <input type="radio" id="star2" name="rating" value="2" hidden/>
+                          <label for="star2"></label>
+                          <input type="radio" id="star1" name="rating" value="1" hidden/>
+                          <label for="star1"></label>
+                          
+                      </div>
+                      <div class="buy">加入購物車</div>
+      </div>
+
+      </div>
+     	</div>
+
+
+      
+    	 
+     	
+     	</div>
+
+
+    
+    </div>
+    
+      </div>
+    </div>
+  <script>
+
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

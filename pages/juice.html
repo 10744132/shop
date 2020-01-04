@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="..\assets/css/index.css">
+<link rel="stylesheet" type="text/css" href="..\assets/css/bootstrap.css">
+ 
+
+
+
+</head>
+<body>
+	<div class="head">
+		<div class="logo"><a href="..\index.html"><img src="..\assets/images/logo.png" border="0" style=" position:relative;top:20px;left:30px; height:160px ;"></a> </div>
+		<div class="inter"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post" style="height: 400px;width:600px; ">
+    <div class="imgcontainer" >
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container" >
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"> <a href="acount.html">註冊</a></span>
+    </div>
+  </form>
+</div></div>
+		<div class="car"><a href="shopcar.html"  style="text-decoration:none;" title="car"><img src="..\assets/images/car.gif" border="0" style=" border-radius: 10%;width:100px;height:100px; "></a></div>
+		</div>
+	</div>
+	<div class="MENU">
+<ul>
+  <li><a href="produce.html"  style="text-decoration:none;" title="soda">碳酸飲料</a></li>
+  <li><a href="tea.html"  style="text-decoration:none;" title="tea">茶類</a></li>
+  <li><a href="juice.html"  style="text-decoration:none;" title="juice">果汁</a></li>
+  <li><a href="coffee.html"  style="text-decoration:none;" title="coffee">咖啡飲料</a></li>
+  <li><a href="bear.html"  style="text-decoration:none;" title="bear">酒飲</a></li>  
+</ul>
+</div>
+     <div class="main">
+     	<div class="pic"><img src="..\assets/images/juice.jpg" border="0" style=" border-radius: 10%;width:350px;height:350px; "></div>
+     				<h1 class="w1"><b>釋迦汁</b></h1>
+     				<h1 class="c1"><b>$60</b></h1>
+            <a href="juice1.html">
+     				<input type="button" class="b1"  value="了解更多" style="position:relative;top:160px;left:200px; ">
+          </a>
+     	</div>
+    	 
+     	<div class="pic1"><img src="..\assets/images/juice.jpg" border="0" style=" border-radius: 10%;width:350px;height:350px; "></div>
+     	<h1 class="w2"><b>哈密瓜汁</b></h1>
+     				<h1 class="c2"><b>$55</b></h1>
+            <a href="juice2.html">
+     				<input type="button" class="b2"  value="了解更多" style="position:relative;top:-760px;left:820px; ">
+          </a>
+     	</div>
+     	<div class="pic2"><img src="..\assets/images/juice.jpg" border="0" style=" border-radius: 10%;width:350px;height:350px; "></div>
+     	<h1 class="w3"><b>椰子汁</b></h1>
+     				<h1 class="c3"><b>$50</b></h1>
+            <a href="juice3.html">
+     				<input type="button" class="b3"  value="了解更多" style="position:relative;top:-1330px;left:1430px; ">
+          </a>
+     	</div>
+      <div class="image-container">
+    <div class="text" style="background-image: url(../assets/images/p2.jpg) " >i-Drinking</div>
+    </div>
+    <div><p class="smallw">哈囉，歡迎來到我們的商店   </p>
+    <p class="smallw">在這個炎熱的夏日，來杯清涼的吧~</p>
+    <p class="smallw"><strong>地址:</strong>中原大學 I M</p>
+    <p class="smallw">Hava a nice day!!</p>
+</div>
+      </div>
+    </div>
+  <script>
+
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>

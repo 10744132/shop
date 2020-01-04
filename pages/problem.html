@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="..\assets/css/index2.css">
+<link rel="stylesheet" type="text/css" href="..\assets/css/bootstrap.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  border: 2px solid rgba(0,0,0,0.5);
+  transition: all 0.5s linear;
+  border: 2px solid #ffffff;
+  background-color: #E1A06E ;
+  color: white;
+  font-family:cursive ;
+  width:200px;
+  height:60px;
+  font-size:30px;
+  position:relative;
+  top:50px;
+  left: 350px;
+}
+
+input[type=submit]:hover {
+  border: 2px solid rgba(0,0,0,0.5);
+  transition: all 0.5s linear;
+  border: 2px solid #ffffff;
+  width:210px;
+  height:70px;
+  font-size:30px;
+  border-radius: 10px; 
+}
+
+.container {
+  border-radius: 5px;
+  
+  padding: 20px;
+  
+
+}
+</style>
+
+
+  
+</head>
+<body>
+  <div class="head">
+    <div class="logo"><a href="..\index.html"><img src="..\assets/images/logo.png" border="1" style=" position:relative;top:20px;left:30px; height:160px ;"></a> </div>
+    <div class="inter"><button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post" style="height: 400px;width:600px; ">
+    <div class="imgcontainer" >
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      
+    </div>
+
+    <div class="container" >
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw"> <a href="acount.html">註冊</a></span>
+    </div>
+  </form>
+</div></div>
+    <div class="car"><a href="shopcar.html"  style="text-decoration:none;" title="car"><img src="../assets/images/car.gif" border="0" style=" border-radius: 10%;width:100px;height:100px; "></a></div>
+    </div>
+  </div>
+  <div class="MENU"style="width:1200px;height: 80px;">
+<ul>
+  <li><a href="produce.html"  style="text-decoration:none;" title="produce">商品</a></li>
+  <li><a href="team.html"  style="text-decoration:none;" title="team">about us</a></li>
+  <li><a href="problem.html"  style="text-decoration:none;" title="problem">聯繫我們</a></li>
+ 
+ 
+  
+</ul>
+</div>
+     <div class="main">
+      
+      <div>
+          <div class="container" style="position:relative;top:200px;left:400px;   height: 800px;width: 1000px;">
+  <form >
+    <label for="name" style="font-family:cursive ;font-size:30px;letter-spacing:10px;color: #007fff">姓名</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="problem"style="font-family:cursive ;font-size:30px;letter-spacing:10px;color: #007fff">主要問題</label>
+    <input type="text" id="lname" name="lastname" placeholder="problem">
+
+    <label for="subject"style="font-family:cursive ;font-size:30px;letter-spacing:10px;color: #007fff">詳細</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+      </div>
+     <div class="image-container" style="position: relative;top:600px;">
+    <div class="text" style="background-image: url(../assets/images/p2.jpg) " >i-Drinking</div>
+    </div>
+    <div style="position: relative;top:1500px;"><p class="smallw">哈囉，歡迎來到我們的商店   </p>
+    <p class="smallw">在這個炎熱的夏日，來杯清涼的吧~</p>
+    <p class="smallw"><strong>地址:</strong>中原大學 I M</p>
+    <p class="smallw">Hava a nice day!!</p>
+</div>
+      </div>
+    </div>
+
+
+<script>
+
+var modal = document.getElementById('id01');
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+  
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html >
+<head>
+ <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="assets/index2.css">
+<link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
+</head>
+
+<body style="height: 800px;width:1000px; margin: auto;">
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    <h1>Sign Up</h1>
+    <p>創建屬於你的帳號，加入我們吧!</p>
+    <hr>
+	<label for="名字"><b>名字</b></label>
+    <input type="text" placeholder="姓名" name="name" required>
+    <label for="性別"><b>性別</b></label>
+    <input type="text" placeholder="性別" name="gender" required>
+    <label for="帳號"><b>帳號</b></label>
+    <input type="text" placeholder="帳號" name="username" required>
+    
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+     <label for="電話"><b>電話</b></label>
+    <input type="text" placeholder="電話號碼" name="tel-nember" required>
+    
+    <label for="地址"><b>地址</b></label>
+    <input type="text" placeholder="地址" name="address" required>
+    <label for="生日"><b>生日</b></label>
+    <input type="text" placeholder="生日" name="birth" required>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    </label>
+    
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
